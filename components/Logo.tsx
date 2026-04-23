@@ -1,18 +1,33 @@
 import Link from "next/link";
 
-export function Logo({ className = "" }: { className?: string }) {
+export function Logo({
+  className = "",
+  variant = "mark-with-wordmark",
+}: {
+  className?: string;
+  variant?: "mark-with-wordmark" | "mark" | "lockup";
+}) {
+  if (variant === "lockup") {
+    return (
+      <Link href="/" className={`inline-flex items-center ${className}`} aria-label="InkWave home">
+        <img src="/img/logo-lockup.svg" alt="InkWave" className="h-12 w-auto" />
+      </Link>
+    );
+  }
+
+  if (variant === "mark") {
+    return (
+      <Link href="/" className={`inline-flex items-center ${className}`} aria-label="InkWave home">
+        <img src="/img/logo-mark.svg" alt="InkWave" className="h-8 w-auto" />
+      </Link>
+    );
+  }
+
   return (
-    <Link href="/" className={`inline-flex items-center gap-2 ${className}`} aria-label="InkWave home">
-      <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-ink-600 text-white">
-        <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden>
-          <path
-            fill="currentColor"
-            d="M3 16c2-4 5-4 7 0s5 4 7 0 4-4 4-4v6H3v-2Z"
-          />
-        </svg>
-      </span>
-      <span className="text-lg font-bold tracking-tight text-slate-900">
-        Ink<span className="text-ink-600">Wave</span>
+    <Link href="/" className={`inline-flex items-center gap-2.5 ${className}`} aria-label="InkWave home">
+      <img src="/img/logo-mark.svg" alt="" className="h-9 w-auto" aria-hidden />
+      <span className="text-xl font-extrabold tracking-wide text-slate-900">
+        INK<span className="ml-1">WAVE</span>
       </span>
     </Link>
   );

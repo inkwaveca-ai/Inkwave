@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" aria-label="InkWave">
+  <title>InkWave</title>
+  <g>
+    <circle cx="28" cy="12" r="6.5" fill="#00AEEF"/>
+    <polygon points="20,90 32,90 44,26 32,26" fill="#00AEEF"/>
+    <polygon points="42,90 54,90 66,22 54,22" fill="#EC008C"/>
+    <polygon points="64,90 76,90 88,18 76,18" fill="#FFED00"/>
+    <polygon points="86,90 98,90 110,38 98,38" fill="#111111"/>
+  </g>
+</svg>
