@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3edff"/>
+      <stop offset="1" stop-color="#c5d9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <g fill="none" stroke="#2850e6" stroke-width="6" stroke-linecap="round">
+    <circle cx="200" cy="200" r="90"/>
+    <path d="M135 265 L265 135"/>
+  </g>
+  <text x="200" y="340" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#17308a" text-anchor="middle">InkWave</text>
+</svg>
